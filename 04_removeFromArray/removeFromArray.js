@@ -1,7 +1,7 @@
 const removeFromArray = function(array, ...toRemove) {
 
     let newArray = [];
-    if (toRemove.length === 1){
+    if (toRemove.length == 1){
         // Check where item is in array
         for (i=0; i<array.length; i++){
             if (array[i] != toRemove)
