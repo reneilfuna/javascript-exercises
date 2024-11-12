@@ -1,12 +1,17 @@
 const reverseString = function(string) {
     //Function takes a string and then reverses the string.
     const reversedString = [];
+
+    // Accept blank strings
+    if (string == '')
+        return '';
+
     // Loop through each character in the string
     for (i=0; i<string.length; i++) {
         // Read the character
         char = string[i];
         // Push character into an array
-        reversedString.unshift(char)
+        reversedString.unshift(char);
     }
     // Convert array toString
     finalResult = reversedString.join('');
